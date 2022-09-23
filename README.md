@@ -1,6 +1,7 @@
 # despesas_pessoais
 
 A new Flutter project.
+esse projeto sera feito com as informaçoes que for aprendendo durante o curso
 
 ## Getting Started
 
