@@ -25,9 +25,10 @@ class PaginaInicial extends StatelessWidget {
         title: const Text('Despesas Pessoais'),
       ),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Container(
-            width:double.infinity,
             child: Card(
               color: Colors.green,
               child: Text('Gráficos'),
