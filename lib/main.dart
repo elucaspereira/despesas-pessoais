@@ -55,7 +55,7 @@ class PaginaInicial extends StatelessWidget {
               return Card(
                 child: Text(tr.titulo),
               );
-            }).toList
+            }).toList()
           )
         ],
       ),
