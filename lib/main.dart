@@ -1,3 +1,4 @@
+import 'package:despesas_pessoais/models/transacao.dart';
 import 'package:flutter/material.dart';
 void main(){
   runApp(const DespesasP());
@@ -8,7 +9,7 @@ class DespesasP extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  MaterialApp(
       debugShowCheckedModeBanner: false,
       home: PaginaInicial(),
     );
@@ -16,7 +17,22 @@ class DespesasP extends StatelessWidget {
   }
 }
 class PaginaInicial extends StatelessWidget {
-  const PaginaInicial({Key? key}) : super(key: key);
+   PaginaInicial({Key? key}) : super(key: key);
+
+  final _transacoes = [
+    Transacao(
+      id: 'op 0001',
+      titulo: 'compra na americanas',
+      valor: 155.55,
+      data: DateTime.now(),
+    ),
+    Transacao(
+      id: 'op 0002',
+      titulo: 'despesas de alimentação',
+      valor: 480.00,
+      data: DateTime.now(),
+    ),
+  ];
 
   @override
   Widget build(BuildContext context) {
