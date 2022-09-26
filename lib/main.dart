@@ -50,8 +50,12 @@ class PaginaInicial extends StatelessWidget {
               child: Text('Gráficos'),
             ),
           ),
-          Card(
-            child: Text('Lista de Transações'),
+          Column(
+            children: _transacoes.map((tr){
+              return Card(
+                child: Text(tr.titulo),
+              );
+            }).toList
           )
         ],
       ),
