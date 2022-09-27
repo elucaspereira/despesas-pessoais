@@ -57,8 +57,24 @@ class PaginaInicial extends StatelessWidget {
                 Row(
                   children: [
                     Container(
+                      margin: EdgeInsets.symmetric(
+                        horizontal: 15,
+                        vertical: 10,
+                      ),
+                      decoration: BoxDecoration(
+                        border:Border.all(
+                          color: Colors.pink.shade200,
+                          width: 2
+                        )
+                      ),
+                      padding: EdgeInsets.all(10),
                       child: Text(
                         tr.valor.toString(),
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 15,
+                          color: Colors.pink[400]
+                        ),
                       ),
                     ),
                     Column(
