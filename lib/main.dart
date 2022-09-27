@@ -53,6 +53,7 @@ class PaginaInicial extends StatelessWidget {
           Column(
             children: _transacoes.map((tr){
               return Card(
+                child:
                 Row(
                   children: [
                     Container(
